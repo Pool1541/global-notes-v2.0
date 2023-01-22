@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/global-notes-v2.0/static/js/main.8558d92d.js",
+    "static/media/styled-components-logo.png": "/global-notes-v2.0/static/media/styled-components-logo.e6f279cdcd91f1776dce.png",
+    "index.html": "/global-notes-v2.0/index.html",
+    "main.8558d92d.js.map": "/global-notes-v2.0/static/js/main.8558d92d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8558d92d.js"
+  ]
+}
