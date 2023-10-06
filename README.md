@@ -69,5 +69,3 @@ Contributions are welcome! Here are some ways you can contribute:
 - Submit bugs and feature requests by opening an issue.
 - Improve the documentation by opening a pull request.
 - Add a new feature or fix a bug by opening a pull request.
-
----
