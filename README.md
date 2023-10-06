@@ -43,7 +43,7 @@ To deploy on gh-pages, first change the "homepage" in the `package.json` file an
 
 ```json
 {
-  "homepage": "https://your-username.github.io/my-portfolio"
+  "homepage": "https://your-username.github.io/global-notes-v2.0"
 }
 ```
 
