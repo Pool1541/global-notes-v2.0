@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import StyledDiv from "./Div.element";
+import styled from 'styled-components';
+import StyledDiv from './Div.element';
 
 const StyledCard = styled(StyledDiv)`
   max-height: 200px;
@@ -7,6 +7,7 @@ const StyledCard = styled(StyledDiv)`
   overflow-y: auto;
   overflow-wrap: break-word;
   background-color: #fff;
+  border: 1px solid #dadada;
   border-radius: 7px;
   padding: 20px;
   color: #464646;
