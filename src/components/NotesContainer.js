@@ -1,19 +1,19 @@
-import StyledContainerFluid from "./elements/ContainerFluid.elements";
-import Note from "./Note";
-import { DataContext } from "../context/dataContext";
-import { useContext } from "react";
-import SkeletonNote from "./SkeletonNote";
+import StyledContainerFluid from './elements/ContainerFluid.elements';
+import Note from './Note';
+import { DataContext } from '../context/dataContext';
+import { useContext } from 'react';
+import SkeletonNote from './SkeletonNote';
 
 export default function NotesContainer() {
   const data = useContext(DataContext).data;
 
-  const skeletonArr = Array.from(" ".repeat(30));
+  const skeletonArr = Array.from(' '.repeat(30));
 
   if (!data) {
     return (
       <StyledContainerFluid>
-        {skeletonArr.map(() => (
-          <SkeletonNote />
+        {skeletonArr.map((_, index) => (
+          <SkeletonNote key={index} />
         ))}
       </StyledContainerFluid>
     );
