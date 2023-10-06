@@ -22,12 +22,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "e2e": "cypress open"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "env": {
+      "cypress/global": true
+    },
+    "plugins": [
+      "cypress"
     ]
   },
   "browserslist": {
@@ -41,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^13.3.0",
+    "eslint-plugin-cypress": "^2.15.1"
   }
 }
