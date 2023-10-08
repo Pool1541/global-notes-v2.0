@@ -3,12 +3,12 @@ import {
   collection,
   doc,
   getDocs,
-  getFirestore,
   onSnapshot,
   orderBy,
   query,
   setDoc,
   updateDoc,
+  initializeFirestore,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -21,7 +21,8 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const databaseId = process.env.REACT_APP_MODE === 'test' ? 'global-notes-app-test' : '';
+const db = initializeFirestore(app, {}, databaseId);
 
 export async function setNote(note) {
   const collectionRef = collection(db, 'Notes');

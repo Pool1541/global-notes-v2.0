@@ -1,4 +1,4 @@
-describe('App', () => {
+describe('Note Taking Application - Create and Modify Notes', () => {
   beforeEach(() => {
     cy.visit('/');
   });
@@ -8,12 +8,14 @@ describe('App', () => {
   });
 
   it('Should add a new note', () => {
+    const noteTitle = 'New note from cypress at ' + new Date().getTime();
+
     cy.get('textarea[placeholder="Take a note..."]').click();
-    cy.get('input[placeholder="Title"]').type('New note from cypress');
+    cy.get('input[placeholder="Title"]').type(noteTitle);
     cy.get('textarea').type('Description from cypress');
     cy.get('button[type="submit"]').click();
 
-    cy.contains('New note from cypress').should('be.visible');
+    cy.contains(noteTitle).should('be.visible');
     cy.contains('Description from cypress').should('be.visible');
   });
 });

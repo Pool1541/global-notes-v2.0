@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "global-notes-react",
+    "global-notes-react": "global-notes-react"
+  },
+  "targets": {},
+  "etags": {}
+}
