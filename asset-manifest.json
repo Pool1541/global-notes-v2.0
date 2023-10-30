@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/global-notes-v2.0/static/js/main.b921060a.js",
+    "main.js": "/global-notes-v2.0/static/js/main.2d313364.js",
     "static/media/styled-components-logo.png": "/global-notes-v2.0/static/media/styled-components-logo.e6f279cdcd91f1776dce.png",
     "index.html": "/global-notes-v2.0/index.html",
-    "main.b921060a.js.map": "/global-notes-v2.0/static/js/main.b921060a.js.map"
+    "main.2d313364.js.map": "/global-notes-v2.0/static/js/main.2d313364.js.map"
   },
   "entrypoints": [
-    "static/js/main.b921060a.js"
+    "static/js/main.2d313364.js"
   ]
 }
