@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Note Taking Application - Create and Modify Notes', () => {
   beforeEach(() => {
     cy.visit('/');
